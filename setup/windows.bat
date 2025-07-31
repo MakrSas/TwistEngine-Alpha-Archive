@@ -10,6 +10,7 @@ haxelib install flixel 5.6.2 --skip-dependencies
 haxelib install flixel-addons 3.2.3 --skip-dependencies
 haxelib install flixel-ui 2.6.1 --skip-dependencies
 haxelib install thx.semver --skip-dependencies
+haxelib install hscript
 @REM haxelib install yagp
 haxelib install hxvlc --skip-dependencies
 haxelib install haxeui-openfl 1.7.0 --skip-dependencies
