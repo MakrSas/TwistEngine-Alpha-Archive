@@ -82,7 +82,7 @@ class MainMenuState extends MusicBeatState {
 
 		FlxG.camera.follow(menuItems.members[0], null, 0);
 
-		final versionTxt:FlxStaticText = new FlxStaticText(12, FlxG.height - 8, 0, 'Twist Engine ${EngineData.engineVersion}
+		final versionTxt:FlxStaticText = new FlxStaticText(12, FlxG.height - 8, 0, 'Twist Engine ${EngineData.engineVersion} | MAKR BUILD' + (ClientPrefs.data.debugMode ? ' | DEBUG MODE' : '') + '\n
 		Friday Night Funkin v${lime.app.Application.current.meta.get('version')}', 16);
 		versionTxt.scrollFactor.set();
 		versionTxt.fieldHeight = -10;
@@ -91,7 +91,6 @@ class MainMenuState extends MusicBeatState {
 		versionTxt.font = Paths.font('defaultPsych/vcr.ttf');
 		add(versionTxt);
 		versionTxt.y -= versionTxt.height;
-		final cornerTxt = new FlxStaticText(0, 0, 0, "MAKR BUILD", 16);
 
 		changeItem();
 
