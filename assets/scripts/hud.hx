@@ -10,7 +10,7 @@ import flixel.util.FlxDirectionFlags;
 import flixel.group.FlxTypedSpriteGroup;
 
 var timeTxtFormat = new FlxTextFormat();
-var botplayTxt = new FlxText(0, 10, 0, "BOTPLAY");
+var botplayTxt = new FlxText(50, 10, 0, "BOTPLAY");
 var scoreTxtTween:FlxTween;
 var healthBarBar:Bar;
 var timeText:FlxFixedText;
@@ -120,8 +120,8 @@ function updateColorsInHealthBarTwist(start) {
 function createTwistHud()
 {
 	// healthBar
-	healthBarBar = new Bar(0, 0, 'healthBar', () -> return health, 0, 2);
-	healthBarBar.y = FlxG.height * 0.89;
+	healthBarBar = new Bar(6, 0, 'healthBar', () -> return health, 0, 2);
+	healthBarBar.y = FlxG.height * 0.85;
 	healthBarBar.smoothFactor = 2.9;
 	if (ClientPrefs.downScroll)
 		healthBarBar.y = 0.09 * FlxG.height;
