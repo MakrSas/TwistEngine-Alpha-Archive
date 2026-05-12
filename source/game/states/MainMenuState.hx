@@ -91,6 +91,7 @@ class MainMenuState extends MusicBeatState {
 		versionTxt.font = Paths.font('defaultPsych/vcr.ttf');
 		add(versionTxt);
 		versionTxt.y -= versionTxt.height;
+		final cornerTxt = new FlxStaticText(0, 0, 0, "MAKR BUILD", 16);
 
 		changeItem();
 
