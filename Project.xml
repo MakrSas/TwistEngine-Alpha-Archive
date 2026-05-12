@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project>
+<project xmlns="http://lime.openfl.org/project/1.0.4" xmlns:config="config">
 	<!-- _________________________ Application Settings _________________________ -->
 
+	<set name="APP_TITLE" value="Twist Engine Makr Edition" />
+	<set name="APP_TITLE" value="твыст энжэн мак р эдшен" if="MAKR_BUILD" />
+
 	<app
-		title="Twist Engine Makr Edition"
-		if "MAKR_BUILD"
-				title="твыст энжэн мак р эдшен"
+		title="${APP_TITLE}"
 		file="TwistEngine Makr"
 		main="game.Main"
 		version="0.1.0"
