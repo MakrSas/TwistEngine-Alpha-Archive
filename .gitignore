@@ -6,3 +6,5 @@ crash-dialog/build/*
 .haxelib/*
 */.build_time
 node_modules/*
+assets/.DS_Store
+assets/fonts/.DS_Store
