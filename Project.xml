@@ -3,8 +3,10 @@
 	<!-- _________________________ Application Settings _________________________ -->
 
 	<app
-		title="Friday Night Funkin' Twist Engine"
-		file="TwistEngine"
+		title="Twist Engine Makr Edition"
+		#if MAKR_BUILD
+				title="твыст энжэн мак р эдшен"
+		file="TwistEngine Makr"
 		main="game.Main"
 		version="0.1.0"
 		packageName="com.redar13.twist.main"
@@ -36,7 +38,7 @@
 	<!-- These window settings apply to all targets -->
 	<window
 		width="1280" height="720"
-		background="#000000"
+		background="#365e01"
 		hardware="true"
 		vsync="false"
 		allow-high-dpi="true"
@@ -56,6 +58,7 @@
 
 	<!-- Type of build -->
 	<define name="DEV_BUILD"/>
+	<define name="MAKR_BUILD"/>
 	<!-- <define name="RELEASE_BUILD"/> -->
 	<undefine name="DEV_BUILD" if="RELEASE_BUILD"/>
 
@@ -124,6 +127,8 @@
 	<set name="BUILD_DIR" value="export/dev"			 if="DEV_BUILD" unless="debug" />
 	<set name="BUILD_DIR" value="export/release"		 if="RELEASE_BUILD" />
 	<set name="BUILD_DIR" value="export/release-32bits"	 if="RELEASE_BUILD 32bits" />
+	<set name="BUILD_DIR" value="export/makr" 		     if="MAKR_BUILD" />
+
 
 	<!-- idk -->
 	<!--<assets path="plugins/" rename="" />-->
