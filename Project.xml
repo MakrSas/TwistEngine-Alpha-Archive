@@ -70,6 +70,7 @@
 	<define name="MODS_ALLOWED" unless="RELEASE_BUILD" if="desktop" />
 	<define name="LUA_ALLOWED" if="desktop cpp" />
 	<define	name="HSCRIPT_ALLOWED"/>
+	<haxedef name="hscript" if="HSCRIPT_ALLOWED" />
 	<haxedef name="MULTI_THREADING_ALLOWED" if="desktop || mobile"/>
 	<haxedef name="LOGS_TRACES_ON_CRASH" unless="RELEASE_BUILD"/>
 	<define name="HAXE_UI" unless="display || display_details || RELEASE_BUILD"/>
@@ -289,8 +290,10 @@
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 	<!-- <haxedef name="HXCPP_DEBUGGER" if="DEV_BUILD"/> -->
 
-	<!-- Build game with clang compiler instead of MSVC -->
-	<haxedef name="HXCPP_CLANG"/>
+	<!-- Build with clang only when it is explicitly requested.
+		Defaulting to MSVC on Windows avoids mixed-object builds on machines
+		where clang is not configured end-to-end. -->
+	<haxedef name="HXCPP_CLANG" if="USE_CLANG"/>
 
 	<!-- Allow storage of bigger sprites and memory usage above 2.99 GB. -->
 	<!-- <haxedef name="HXCPP_GC_BIG_BLOCKS"/> -->
