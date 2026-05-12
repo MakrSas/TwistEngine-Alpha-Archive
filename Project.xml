@@ -163,7 +163,7 @@
 		<assets path="modsFolders.txt" embed="false" />
 	</section>
 
-	<assets path="badapplelol.mp4" rename="assets/videos/badapplelol.mp4" embed="false"  if="debug VIDEOS_ALLOWED" />
+	<assets path="pomnitryasetjopoi.mp4" rename="assets/videos/pomnitryasetjopoi.mp4" embed="false"  if="debug VIDEOS_ALLOWED" />
 
 	<!-- OpenAL config -->
 	<section if="desktop">

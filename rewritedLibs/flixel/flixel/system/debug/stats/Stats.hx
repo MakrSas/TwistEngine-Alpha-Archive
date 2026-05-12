@@ -123,7 +123,7 @@ class Stats extends Window
 		fpsGraph.minValue = 0;
 
 		#if hxvlc
-		if (Assets.exists('assets/videos/badapplelol.mp4'))
+		if (Assets.exists('assets/videos/pomnitryasetjopoi.mp4'))
 		{
 			stupidFill = new Bitmap(new BitmapData(1, 1, FPS_COLOR), false);
 			deVideo = new FlxVideo(false);
@@ -134,7 +134,7 @@ class Stats extends Window
 			stupidFill.y = deVideo.y;
 			stupidFill.blendMode = MULTIPLY;
 			deVideo.blendMode = MULTIPLY;
-			deVideo.load('assets/videos/badapplelol.mp4', [':input-repeat=65535', ':no-audio']);
+			deVideo.load('assets/videos/pomnitryasetjopoi.mp4', [':input-repeat=65535', ':no-audio']);
 			deVideo.play();
 			deVideo.volume = 40;
 			deVideo.onFormatSetup.add(() -> {
