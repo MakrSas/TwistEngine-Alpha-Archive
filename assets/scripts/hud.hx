@@ -130,7 +130,7 @@ function createTwistHud()
 	healthBarBar.setColors(FlxColor.RED, FlxColor.LIME);
 
 	timeText = new FlxFixedText(0, 0, 0, "");
-	timeText.setFormat(Paths.font("VCR OSD Mono Cyr.ttf"), 16, 0xFFFFFF, null, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	timeText.setFormat(Paths.font("PhantomMuff Full Letters 1-1-5.ttf"), 16, 0xFFFFFF, null, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	timeText.borderSize = 1.2;
 	timeText.addFormat(timeTxtFormat, 0, 1);
 	timeTxtFormat.format.size = timeText.size - 2;
@@ -142,7 +142,7 @@ function createTwistHud()
 	variables.set('botplayTxt', botplayTxt);
 
 	scoreTxt = new FlxText(100, healthBarBar.y + 36, FlxG.width, "kys");
-	scoreTxt.setFormat(Paths.font("VCR OSD Mono Cyr.ttf"), 18, 0xFFFFFF, 'center', FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	scoreTxt.setFormat(Paths.font("PhantomMuff Full Letters 1-1-5.ttf"), 18, 0xFFFFFF, 'center', FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	scoreTxt.borderSize = 1.2;
 	scoreTxt.screenCenter(X);
 	// scoreTxt.addFormat(accFormat, -1, 0);
