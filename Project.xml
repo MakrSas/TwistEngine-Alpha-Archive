@@ -4,7 +4,7 @@
 
 	<app
 		title="Twist Engine Makr Edition"
-		#if MAKR_BUILD
+		if "MAKR_BUILD"
 				title="твыст энжэн мак р эдшен"
 		file="TwistEngine Makr"
 		main="game.Main"
