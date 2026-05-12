@@ -367,6 +367,8 @@ class ArrowPress extends FlxSprite
 		updateHitbox();
 		animation.play('idle');
 		color = 0xFF333333;
+		#if MAKR_BUILD
+			color = 0xFFFF0000;
 		origScale = (scale.x + scale.y) / 2;
 		FlxMouseEvent.add(this, _ -> onPress(), _ -> onRelease(), /* null, */_ -> onOver(), _ -> onOut(), false, true, false);
 	}
