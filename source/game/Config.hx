@@ -8,6 +8,6 @@ class Config {
 	public static final discordConfig:game.backend.system.net.Discord.DiscordJson = {
 		clientID: "1197647927854759957",
 		largeImageKey: "defaultlogo",
-		largeImageText: "Twist Engine <ENGINE-VERSION>"
+		largeImageText: "Что то делаю"
 	}
 }

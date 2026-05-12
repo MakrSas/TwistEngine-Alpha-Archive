@@ -979,7 +979,13 @@ class PlayState extends MusicBeatState {
 			// detailsGameOverText = "Game Over - " + detailsText;
 
 			detailsText = "Playing";
+			#if MAKR_BUILD
+			detailsText = "GAYming";
+			#end
 			detailsPausedText = "Paused";
+			#if MAKR_BUILD
+			detailsPausedText = "na pauze";
+			#end
 			detailsGameOverText = "Game Over";
 
 			detailsSong = SONG.display;

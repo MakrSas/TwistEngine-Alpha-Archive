@@ -3,7 +3,7 @@
 	<!-- _________________________ Application Settings _________________________ -->
 
 	<set name="APP_TITLE" value="Twist Engine Makr Edition" />
-	<set name="APP_TITLE" value="твыст энжэн мак р эдшен" if="MAKR_BUILD" />
+	<set name="APP_TITLE" value="Twist Engine Makr Edition WW" if="MAKR_BUILD" />
 
 	<app
 		title="${APP_TITLE}"
@@ -39,7 +39,7 @@
 	<!-- These window settings apply to all targets -->
 	<window
 		width="1280" height="720"
-		background="#365e01"
+		background="#000000"
 		hardware="true"
 		vsync="false"
 		allow-high-dpi="true"
